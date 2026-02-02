@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Online Exam Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <div class="container active" id="start-screen">
+    <h1>Online Examination</h1>
+    <p>Enter your details to begin</p>
+
+    <input type="text" id="studentName" placeholder="Full Name" />
+    <input type="text" id="studentUSN" placeholder="USN / Roll Number" />
+
+    <button class="primary-btn" onclick="startQuiz()">Start Exam</button>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div class="container" id="quiz-screen">
+    <div class="top-bar">
+      <div id="timer">⏱ 20:00</div>
+      <div id="progress">Question <span id="currentQ">1</span>/30</div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <h2 id="question"></h2>
+
+    <div id="options" class="options"></div>
+  </div>
+
+  <!-- RESULT SCREEN -->
+  <div class="container" id="result-screen">
+    <h1>Exam Result</h1>
+
+    <div class="result-box">
+      <p><strong>Name:</strong> <span id="resName"></span></p>
+      <p><strong>USN:</strong> <span id="resUSN"></span></p>
+      <p><strong>Score:</strong> <span id="resScore"></span>/30</p>
+      <p><strong>Percentage:</strong> <span id="resPercent"></span>%</p>
+    </div>
+
+    <button class="secondary-btn" onclick="location.reload()">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
