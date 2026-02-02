@@ -30,9 +30,13 @@ Designed to simulate a real online examination experience with timer, auto-navig
 ## 📂 Project Structure
 
 quiz-app/
+
 │── index.html # Main HTML file
+
 │── style.css # Complete UI styling
+
 │── script.js # Quiz logic & timer
+
 │── README.md # Project documentation
 
 
@@ -96,7 +100,3 @@ No restrictions.
 
 ---
 
-## 👨‍💻 Author
-
-Built as a **front-end skill demonstration project**  
-Focused on clarity, usability, and real-world exam behavior.
